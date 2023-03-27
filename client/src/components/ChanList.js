@@ -1,18 +1,21 @@
 import React from 'react';
+// import AsyncStorage from '@react-native-async-storage/async-storage';
 import { List,
         Datagrid,
         TextField,
         EditButton, 
-        DeleteButton } from 'react-admin';
+        DeleteButton,
+        CreateButton } from 'react-admin';
 
 const ChanList = (props) => {
   return (
     <List {...props}>
+      <CreateButton />
       <Datagrid>
-        <TextField source='channel_id' />
+        <TextField source='id_channel' />
         <TextField source='channel_name' />
-        <EditButton basePath='/channels' />
-        <DeleteButton basePath='/channels'/>
+        <EditButton />
+        <DeleteButton />
       </Datagrid>
     </List>
   )

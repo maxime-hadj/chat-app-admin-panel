@@ -13,8 +13,8 @@ const MessageList = (props) => {
         <TextField source='text' />
         <TextField source='channel_id' />
         <TextField source='date' />
-        <EditButton basePath='/messages' />
-        <DeleteButton basePath='/messages'/>
+        <EditButton />
+        <DeleteButton />
       </Datagrid>
     </List>
   )
